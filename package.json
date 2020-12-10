@@ -1,0 +1,40 @@
+{
+  "name": "UltimateBot",
+  "version": "2.0.0",
+  "description": "UltimateBot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "LebryantJohnson",
+  "license": "ISC",
+  "dependencies": {
+    "discord-anti-spam": "^2.4.1",
+    "discord.js": "^11.5.1",
+    "mongoose": "^5.9.22",
+    "ms": "^2.1.2",
+    "n": "^6.7.1",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
+    "sqlite3": "^4.0.6",
+    "unzip": "^0.1.11",
+    "yaml": "^1.6.0"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "reaction",
+    "role",
+    "reaction-role",
+    "discord-bot",
+    "emoji",
+    "role",
+    "emoji-role",
+    "save",
+    "database",
+    "mongodb",
+    "mongoose",
+    "mongo",
+    "rr"
+  ]
+}
