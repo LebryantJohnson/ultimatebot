@@ -6,6 +6,6 @@ This an UltimateModeration Bot designed specifically for MC servers but can be m
 3. Edit the [config.yml](https://github.com/LebryantJohnson/ultimatebot/wiki/Config,yml) to your preference.
 4. Start the bot with a daemon process like [PM2](https://pm2.keymetrics.io/)
 
-If you need more help look at the wiki or dm me for support
-[wiki](https://github.com/LebryantJohnson/ultimatebot/wiki)
+If you need more help look at the [wiki](https://github.com/LebryantJohnson/ultimatebot/wiki) or dm me for support
+
 Discord: LebryantJohnson #2014
