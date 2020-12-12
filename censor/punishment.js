@@ -1,5 +1,5 @@
 var bannedUsers = {};
-const MAX_WARNINGS = 1;
+const MAX_WARNINGS = 1000000000;
 
 module.exports = {
   doleOutPunishment: function(bot, member, guild) {
@@ -31,8 +31,8 @@ module.exports = {
   checkProfanity: function(message, bannedWords) {
     var words = message.split(' ');
     for (var word of words) {
-      if (bannedWords.indexOf(word) > -1) return true;
+       if (bannedWords.some(element => word.match(new RegExp(element, "i")))) return true;
     }
     return false;
-  },
+}
 };
