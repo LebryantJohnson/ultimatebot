@@ -1,4 +1,7 @@
 # ultimatebot
+
+**Startup Guide**
+
 This an UltimateModeration Bot designed specifically for MC servers but can be modified to work on anything.
 
 1. Download the [repository](https://github.com/LebryantJohnson/ultimatebot) and get it into the desired location.
