@@ -3,7 +3,7 @@
 #       CoreBot Config        #
 #                             #
 ###############################
-Bot_Token: "NzUyMzA3MjkyMDc0MDE2Nzk5.X1Vuww.HrXe2kWC3HDDGas-OcV9Kgxxjz0"
+Bot_Token: "NzUyMzA3MjkyMDc0MDE2Nzk5.X1Vuww.wmWtQw9lG0mDhUvH7-TlOyygXi0"
 # This is your bot application's token. You can get this by going to discord's developer portal, creating an application, then turning the application into a bot.
 Bot_Prefix: "!"
 # This is the symbol you will have to use to run all of CoreBot's commands.
@@ -61,13 +61,13 @@ Chat_Logs_Blacklist:
 
 Join_Messages: "true"
 # This will enable or disable join messages.
-Join_Role: "unverified"
+Join_Role: "-NONE"
 # This is the role given to users when they join. Put "-NONE" to not give a role on join.
 Join_Message_Channel: "join"
 # This is the channel welcome mesages will be sent in.
 Join_Message: "embed"
 # This is the message sent in the join channel when a user joins. If you would like the message to be sent as an embed put "embed".
-DM_Message: "Welcome to the server, {user}!"
+DM_Message: "-NONE"
 # This is the message DMed to users when they join. Put -NONE to not DM a welcome message to users.
 
 
@@ -294,7 +294,7 @@ Ticket_Embed_Timestamp: "true"
 
 Filter_System: "false"
 # This will enable or disable the filter system.
-Filter_Bypass_Role: "Staff"
+Filter_Bypass_Role: "Owner"
 # This is the rank required to bypass the filter system and say blacklisted words.
 Filter_Required_Rank: "Staff"
 # This is the rank required to run the filter command and edit the filter system.
@@ -308,8 +308,8 @@ Filter_Required_Rank: "Staff"
 ####################################
 
 Server_One_Name: "TerrestrialMC"
-Server_One_URL: "https://api.minetools.eu/ping/terrestrialmc.net/25565"
-Server_One_Query_URL: "https://api.minetools.eu/ping/play.revivenode.com/25565"
+Server_One_URL: "https://api.minetools.eu/ping/terrestrialmc.net"
+Server_One_Query_URL: "https://api.minetools.eu/ping/terrestrialmc.net"
 
 ### VV OPEN A TICKET IF YO WANT TO USE THESE OR MORE VV ##
 Gamemode_Two_Name: "Gamemode2"
@@ -329,7 +329,7 @@ Gamemode_Three_Query_URL: "https://api.minetools.eu/ping/play.example.com/25568"
 ########################################
 # NOTE: Be sure to make the Join_Role a role like "Unverified" or "Unregistered" and make that role have proper permissions to only see X channel(s)
 
-Verification_System: "true"
+Verification_System: "false"
 # This will enable or disable the verification system
 Verification_Role: "Member"
 # This is the role users will get after verifying 
@@ -415,7 +415,7 @@ Suggestions_Channel: "✍suggestions✍"
 # This is the channel suggestions will be set to.
 Updates_Channel: "updates"
 # This is the channel updates will be sent to.
-Vote_Channel: "polls"
+Vote_Channel: "✋polls✋"
 # This is the channel votes will be sent to.
 Announcement_Channel: "📢announcements📢"
 # This is the channel announcements will be sent to.
@@ -438,11 +438,11 @@ Announcement_Auto_Tag: "true"
 Announcement_Embed_Thumbnail: "https://images-ext-1.discordapp.net/external/veZptUu_KDKmwtUJX5QT3QxESYCaRp4_k0XUwEQxubo/https/i.imgur.com/e9DIB8e.png"
 # This is the image link that will be put at the top right corner of the embed. Put "-NONE" to not have a thumbnail in the embed.
 # Put "{Bot_PFP}" to use your bot's profile picture. Put "{Executor_PFP}" to use the command executor's profile picture.
-Announcement_Embed_Footer: "Example Network"
+Announcement_Embed_Footer: "TerrestrialMC"
 # This is the footer of the embed. Put "-NONE" to not have a footer in the embed.
 Announcement_Embed_Timestamp: "true"
 # This will add the time the announcement was posted to the embed's footer if set to "true"
-Announcement_Embed_Footer_Avater_Image: "true"
+Announcement_Embed_Footer_Avater_Image: "false"
 # This will add the command executor's profile picture in the footer of the embed (Will be in a small circle).
 
 
@@ -453,11 +453,11 @@ Announcement_Embed_Footer_Avater_Image: "true"
 #                                  #
 ####################################
 
-Youtube_Link: "https://www.youtube.com/channel/UCJmbe08ZnysYHj8Zjt92HgQ"
+Instagram_Link: "https://www.instagram.com/terrestrial_mc/"
 # This is the link that will be shown in the -link embed. Put "-NONE" if you don't want the website to be shown in the embed!
-Store_Link: "store.terrestrialmc.net"
+Store_Link: "https://store.terrestrialmc.net"
 # This is the link that will be shown in the -link embed. Put "-NONE" if you don't want the store to be shown in the embed!
-FallingCascade_Link: "https://www.youtube.com/channel/UCWsrIdY_2rf4QjFQp5eeAdw"
+Tik_Link: "https://vm.tiktok.com/ZMJqc72HL/"
 # This is the link that will be shown in the -link embed. Put "-NONE" if you don't want the twitter to be shown in the embed!
 
 

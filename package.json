@@ -9,7 +9,6 @@
   "author": "LebryantJohnson",
   "license": "ISC",
   "dependencies": {
-    "discord-anti-spam": "^2.4.1",
     "discord.js": "^11.5.1",
     "mongoose": "^5.9.22",
     "ms": "^2.1.2",
