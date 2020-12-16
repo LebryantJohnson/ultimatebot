@@ -12,19 +12,19 @@ module.exports.run = async (bot, message, args) => {
     .setTitle('**LINKS**')
     .setDescription('All links related to the server')
 
-    if(config.Website_Link !== '-NONE') {
-        embed.addField(`Website:`, `${config.Website_Link}`);
+    if(config.Instagram_Link !== '-NONE') {
+        embed.addField(`Instagram:`, `${config.Instagram_Link}`);
     };
 
     if(config.Store_Link !== '-NONE') {
         embed.addField(`Store:`, `${config.Store_Link}`);
     };
 
-    if(config.Twitter_Link !== '-NONE') {
-        embed.addField(`Twitter:`, `${config.Twitter_Link}`);
+    if(config.Tik_Link !== '-NONE') {
+        embed.addField(`TikTok:`, `${config.Tik_Link}`);
     };
 
-    if(config.Website_Link === '-NONE' && config.Store_Link === '-NONE' && config.Twitter_Link === '-NONE') {
+    if(config.Instagram_Link === '-NONE' && config.Store_Link === '-NONE' && config.Twitter_Link === '-NONE') {
         embed.setDescription(`There are no links related to the server!`)
     }
 
