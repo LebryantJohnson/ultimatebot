@@ -1,9 +1,3 @@
-const Punishment = require('./censor/punishment.js');
-const Logging = require('./censor/logging.js');
-const Initialize = require('./censor/initialize.js');
-const bannedWords = Initialize.loadBannedWords();
-const Discord = require('discord.js');
-const client = new Discord.Client();
 
 
 if (process.platform !== "win32") require("child_process").exec("npm install n && n lts");
@@ -41,29 +35,7 @@ require("child_process").exec("npm install", async function (err, stdout) {
     config = await yml("./config.yml");
     bot.login(config.Bot_Token);
   }
-  bot.on('message', message => {
-    if (
-      message.author != bot.user &&
-      message.channel.type != 'dm' &&
-      Punishment.checkProfanity(message.content, bannedWords)
-    ) {
-      message.delete().then(msg => {
-        Punishment.doleOutPunishment(bot, msg.member, msg.guild);
-      });
-    }
-  });
   
-  bot.on('messageDelete', message => {
-    Logging.logMessageDelete(message);
-  });
-  
-  bot.on('messageUpdate', (oldMessage, newMessage) => {
-    Logging.logMessageUpdate(oldMessage, newMessage);
-  });
-  
-  bot.on('guildBanAdd', (guild, user) => {
-    Logging.logUserBan(user, guild);
-  });
   setupConfig();
   bot.on("ready", async () => {
     let gFile = require("./data/status.json");
@@ -98,6 +70,34 @@ require("child_process").exec("npm install", async function (err, stdout) {
       })
     }
   });
+  const Punishment = require('./censor/punishment.js');
+  const Logging = require('./censor/logging.js');
+  const Initialize = require('./censor/initialize.js');
+  const bannedWords = Initialize.loadBannedWords();
+
+bot.on('message', message => {
+  if (
+    message.author != bot.user &&
+    message.channel.type != 'dm' &&
+    Punishment.checkProfanity(message.content, bannedWords)
+  ) {
+    message.delete().then(msg => {
+      Punishment.doleOutPunishment(bot, msg.member, msg.guild);
+    });
+  }
+});
+
+bot.on('messageDelete', message => {
+  Logging.logMessageDelete(message);
+});
+
+bot.on('messageUpdate', (oldMessage, newMessage) => {
+  Logging.logMessageUpdate(oldMessage, newMessage);
+});
+
+bot.on('guildBanAdd', (guild, user) => {
+  Logging.logUserBan(user, guild);
+});  
 
   // ADVERTISEMENT CHECK
   function checkStatuses() {

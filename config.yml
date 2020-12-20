@@ -3,7 +3,7 @@
 #       CoreBot Config        #
 #                             #
 ###############################
-Bot_Token: "NzUyMzA3MjkyMDc0MDE2Nzk5.X1Vuww.wmWtQw9lG0mDhUvH7-TlOyygXi0"
+Bot_Token: ""
 # This is your bot application's token. You can get this by going to discord's developer portal, creating an application, then turning the application into a bot.
 Bot_Prefix: "!"
 # This is the symbol you will have to use to run all of CoreBot's commands.
@@ -63,11 +63,11 @@ Join_Messages: "true"
 # This will enable or disable join messages.
 Join_Role: "-NONE"
 # This is the role given to users when they join. Put "-NONE" to not give a role on join.
-Join_Message_Channel: "join"
+Join_Message_Channel: "welcome"
 # This is the channel welcome mesages will be sent in.
 Join_Message: "embed"
 # This is the message sent in the join channel when a user joins. If you would like the message to be sent as an embed put "embed".
-DM_Message: "-NONE"
+DM_Message: "Welcome to TerrestrialMC! Make sure to follow the rules and verify."
 # This is the message DMed to users when they join. Put -NONE to not DM a welcome message to users.
 
 
@@ -397,10 +397,10 @@ Unmute_Required_Rank: "Staff"
 Blacklist_Required_Rank: "Staff"
 Announce_Required_Rank: "Staff"
 Set_Status_Required_Rank: "Staff"
-Set_Prefix_Required_Rank: "Owner"
-Bot_Update_Required_Rank: "Owner"
-Prefix_Required_Rank: "Owner"
-Debug_Required_Rank: "Owner"
+Set_Prefix_Required_Rank: "Staff"
+Bot_Update_Required_Rank: "Staff"
+Prefix_Required_Rank: "Staff"
+Debug_Required_Rank: "Staff"
 Temp_Mute_Required_Rank: "Staff"
 Msg_All_Required_Rank: "Staff"
 Remind_Me_Required_Rank: "Member"
@@ -438,7 +438,7 @@ Announcement_Auto_Tag: "true"
 Announcement_Embed_Thumbnail: "https://images-ext-1.discordapp.net/external/veZptUu_KDKmwtUJX5QT3QxESYCaRp4_k0XUwEQxubo/https/i.imgur.com/e9DIB8e.png"
 # This is the image link that will be put at the top right corner of the embed. Put "-NONE" to not have a thumbnail in the embed.
 # Put "{Bot_PFP}" to use your bot's profile picture. Put "{Executor_PFP}" to use the command executor's profile picture.
-Announcement_Embed_Footer: "TerrestrialMC"
+Announcement_Embed_Footer: "-NONE"
 # This is the footer of the embed. Put "-NONE" to not have a footer in the embed.
 Announcement_Embed_Timestamp: "true"
 # This will add the time the announcement was posted to the embed's footer if set to "true"
@@ -453,11 +453,11 @@ Announcement_Embed_Footer_Avater_Image: "false"
 #                                  #
 ####################################
 
-Instagram_Link: "https://www.instagram.com/terrestrial_mc/"
+Website_Link: "https://www.instagram.com/terrestrial_mc/"
 # This is the link that will be shown in the -link embed. Put "-NONE" if you don't want the website to be shown in the embed!
 Store_Link: "https://store.terrestrialmc.net"
 # This is the link that will be shown in the -link embed. Put "-NONE" if you don't want the store to be shown in the embed!
-Tik_Link: "https://vm.tiktok.com/ZMJqc72HL/"
+Twitter_Link: "https://vm.tiktok.com/ZMJqc72HL/"
 # This is the link that will be shown in the -link embed. Put "-NONE" if you don't want the twitter to be shown in the embed!
 
 
